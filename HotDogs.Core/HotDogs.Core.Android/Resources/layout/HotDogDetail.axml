@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:minHeight="25px"
+    android:minWidth="25px">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/hotDogImageView"
+            android:layout_gravity="center_horizontal" />
+        <TextView
+            android:text="Hot Dog Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hotDogTextView"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:textSize="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="@android:color/background_light" />
+        <TextView
+            android:text="Short Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/shortDescriptionTextView"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:textSize="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="@android:color/background_light" />
+        <TextView
+            android:text="Description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/descriptionTextView"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:textSize="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="@android:color/background_light" />
+        <TextView
+            android:text="Price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/priceTextView"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:textSize="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="@android:color/background_light" />
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp">
+            <Button
+                android:text="Cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancelButton" />
+            <TextView
+                android:text="1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/quantityTextView"
+                android:textColor="@android:color/background_dark"
+                android:inputType="number"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/background_light"
+                android:layout_centerInParent="false" />
+            <EditText
+                android:text="Number"
+                android:id="@+id/NumberTextView"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentRight="false"
+                android:layout_alignRight="@+id/cancelButton"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/cancelButton"
+                android:inputType="number"
+                android:textColor="@android:color/background_light" />
+            <Button
+                android:text="Order"
+                android:id="@+id/orderButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_alignParentStart="false" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

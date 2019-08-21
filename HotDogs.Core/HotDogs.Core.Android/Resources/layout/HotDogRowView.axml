@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@android:color/darker_gray">
+    <ImageView
+        android:id="@+id/hotDogImageView"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:padding="5dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip">
+        <TextView
+            android:text="Hot Dog Name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/hotDogTextView"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:textSize="20dp"
+            android:textColor="@android:color/background_light" />
+        <TextView
+            android:text="Short Description"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/shortDescriptionTextView"
+            android:gravity="left"
+            android:layout_below="@+id/hotDogTextView"
+            android:textSize="16dp"
+            android:textColor="@android:color/background_light" />
+        <TextView
+            android:text="Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/priceTextView"
+            android:gravity="right"
+            android:textSize="20dp"
+            android:textColor="@android:color/background_light"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

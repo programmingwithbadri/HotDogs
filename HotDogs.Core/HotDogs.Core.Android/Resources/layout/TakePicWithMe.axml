@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Take Picture with owner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/takePicTextView"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:textAlignment="center"
+        android:textSize="20px" />
+    <ImageButton
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/takePicImageView"
+        android:layout_marginTop="20dp" />
+    <Button
+        android:text="Launch Camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/launchCameraButton"
+        android:layout_marginTop="20dp" />
+</LinearLayout>
